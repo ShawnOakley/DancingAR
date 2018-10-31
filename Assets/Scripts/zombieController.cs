@@ -8,7 +8,7 @@ public class zombieController : MonoBehaviour {
 	private Animator anim;
 	// Use this for initialization
 	void Start () {
-		anim = Zombie.getComponent<Animator>();
+		anim = Zombie.GetComponent<Animator> ();
 	}
 
 	// Update is called once per frame
@@ -16,7 +16,7 @@ public class zombieController : MonoBehaviour {
 
 	}
 
-	public void changeAnim(){
-		Debug.Log("PRESSED");
+	public void changeAnimstring (string trigger){
+		anim.SetTrigger (trigger);
 	}
 }
